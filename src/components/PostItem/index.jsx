@@ -2,7 +2,7 @@ import { React } from 'react'
 import style from './style.module.scss'
 import { Button } from '../../components';
 
-const PostItem = ({number, post}) =>
+const PostItem = ({number, post, remove}) =>
 {
 
     return (
@@ -11,7 +11,7 @@ const PostItem = ({number, post}) =>
                 <h3 className={style.post_content__title}>{ number }. { post.title }</h3>
                 <p className={style.post_content__description}>{ post.description }</p>  
             </div>
-            <Button>Удалить</Button>
+            <Button onClick={() => remove(post)}>Удалить</Button>
         </div>
     )
 }
