@@ -1,5 +1,9 @@
-import PostItem from './PostItem/index'
-import Button from './UI/Button'
-import PostList from './PostList'
+import Button from './UI/Button';
+import Input from './UI/Input';
 
-export { PostItem, Button, PostList }
+import PostForm from './PostForm';
+import PostList from './PostList';
+import PostItem from './PostItem';
+
+
+export { Button, Input, PostForm, PostList, PostItem };

@@ -1,0 +1,13 @@
+.form {
+    width: 60%;
+    margin: 10px auto 0;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 2px solid rgb(27, 72, 237);
+    &_footer {
+        display: flex;
+        justify-content: flex-end;
+    }
+}

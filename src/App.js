@@ -1,6 +1,6 @@
 import {React, useState} from 'react';
 import './styles/App.scss';
-import {  PostList } from './components';
+import {  PostForm, PostList } from './components';
 
 
 const App = () =>
@@ -31,6 +31,7 @@ const App = () =>
 
     return (
         <div className="App">
+            <PostForm/>
             <PostList title={'Посты о чем-то'} posts={posts} />
         </div>
     )

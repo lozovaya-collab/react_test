@@ -1,0 +1,8 @@
+.input {
+    outline: none;
+    padding: 10px;
+    border: 1px solid rgba(27, 72, 237, 0.47);
+    &:focus {
+        box-shadow: -1px 2px 8px 0px rgba(34, 60, 80, 0.09);
+    }
+}
