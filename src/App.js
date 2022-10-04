@@ -5,7 +5,7 @@ import {  PostForm, PostList } from './components';
 
 const App = () =>
 {
-    const [posts] = useState([
+    const [posts, setPosts] = useState([
          {
             id: 1,
             title: "Title",
@@ -27,11 +27,16 @@ const App = () =>
             description: "Description"
         },
         
-     ]);
+    ]);
 
+    const createPost = (newPost) =>
+    {
+        setPosts([...posts, newPost])
+    }
+    
     return (
         <div className="App">
-            <PostForm/>
+            <PostForm create={createPost}/>
             <PostList title={'Посты о чем-то'} posts={posts} />
         </div>
     )
