@@ -1,12 +1,37 @@
-import React from 'react';
+import {React, useState} from 'react';
 import './styles/App.scss';
-import { PostItem } from './components';
+import {  PostList } from './components';
 
 
-const App = () => {
+const App = () =>
+{
+    const [posts] = useState([
+         {
+            id: 1,
+            title: "Title",
+            description: "Description"
+        },
+         {
+            id: 2,
+            title: "Title",
+            description: "Description"
+        },
+          {
+            id: 3,
+            title: "Title",
+            description: "Description"
+        },
+           {
+            id: 4,
+            title: "Title",
+            description: "Description"
+        },
+        
+     ]);
+
     return (
         <div className="App">
-            <PostItem number={1 } title={'Js'} description={'Description'} />
+            <PostList title={'Посты о чем-то'} posts={posts} />
         </div>
     )
 }
