@@ -2,7 +2,7 @@ import { useState, React } from 'react'
 import style from './style.module.scss'
 import { Button, Input } from '../../components';
 
-const PostForm = ({create}) =>
+const PostForm = ({create, toggle}) =>
 {
     const [post, setPost] = useState({ title: "", description: "" });
     
@@ -14,8 +14,9 @@ const PostForm = ({create}) =>
             id: Date.now(),
             ...post
         }
+        if(toggle) toggle();
         create(newPost);
-
+        
         setPost({ title: "", description: "" });
     }
 

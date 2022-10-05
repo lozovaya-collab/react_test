@@ -5,7 +5,21 @@
     margin: 20px 0;
     gap: 10px;
     width: 100%;
-    &_title {
-        margin: 20px 0;
+    &_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 60%;
+        &__title {
+            margin: 20px 0;
+        }
+        &__icon {
+            cursor: pointer;
+            font-size: 30px;
+            color: black;
+            &:hover {
+                color: rgb(27, 72, 237);
+            }
+        }
     }
 }
